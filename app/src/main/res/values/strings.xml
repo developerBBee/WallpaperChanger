@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WallpaperChanger</string>
+
+    <string-array name="colors">
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Cyan</item>
+        <item>Magenta</item>
+    </string-array>
+
+    <string name="change">change</string>
+</resources>
