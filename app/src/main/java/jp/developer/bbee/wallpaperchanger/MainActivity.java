@@ -75,12 +75,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 wallpaperManager = getSystemService(WallpaperManager.class);
-                Display d;
-                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
-                    d = getBaseContext().getDisplay();
-                } else {
-                    d = getWindowManager().getDefaultDisplay();
-                }
+                Display d = getWindowManager().getDefaultDisplay();
+
                 int width = d.getMode().getPhysicalWidth();
                 int height = d.getMode().getPhysicalHeight();
                 Log.d(TAG, "width=" + width + " height=" + height + " color=" + colorName);
