@@ -3,6 +3,7 @@ package jp.developer.bbee.wallpaperchanger;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.WallpaperManager;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout layoutBack;
     Spinner spinnerColors;
     Button buttonChange;
+    Button buttonPaintMode;
 
     Map<String, Integer> colors;
     Integer whiteColor;
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         layoutBack = findViewById(R.id.layoutBack);
         spinnerColors = findViewById(R.id.spinnerColors);
         buttonChange = findViewById(R.id.buttonChange);
+        buttonPaintMode = findViewById(R.id.buttonPaintMode);
 
         initColors();
 
@@ -96,6 +99,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonPaintMode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PaintMode.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initColors() {

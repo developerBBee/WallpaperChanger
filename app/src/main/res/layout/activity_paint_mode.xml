@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/silver">
+
+        <Button
+            android:id="@+id/buttonSolidColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center"
+            android:text="@string/solid_colors"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <jp.developer.bbee.wallpaperchanger.MyCanvas
+            android:id="@+id/myCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/silver"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="1dp"
+                android:textSize="12sp"
+                android:text="@string/draw_pen"/>
+            <Button
+                android:id="@+id/buttonEraser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="1dp"
+                android:textSize="12sp"
+                android:text="@string/draw_eraser"/>
+            <Button
+                android:id="@+id/buttonBucket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="1dp"
+                android:textSize="12sp"
+                android:text="@string/draw_bucket"/>
+            <Button
+                android:id="@+id/buttonChange2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="1dp"
+                android:textSize="12sp"
+                android:text="@string/change"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

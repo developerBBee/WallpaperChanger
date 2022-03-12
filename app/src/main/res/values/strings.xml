@@ -13,4 +13,10 @@
     </string-array>
 
     <string name="change">change</string>
+    <string name="paint_mode">paint mode</string>
+    <string name="solid_colors">solid colors</string>
+
+    <string name="draw_pen">pen</string>
+    <string name="draw_eraser">eraser</string>
+    <string name="draw_bucket">bucket</string>
 </resources>
